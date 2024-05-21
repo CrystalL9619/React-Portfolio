@@ -18,6 +18,7 @@ const Project = () => {
           language: project.Language,
           desc: project.desc,
           image: project.image,
+          link: project.link,
         }));
         setProjects(mappedProjects);
       })
@@ -65,7 +66,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See more</button>
+            <button>
+              <a href="item.link">See more</a>
+            </button>
           </motion.div>
         </div>
       </div>
