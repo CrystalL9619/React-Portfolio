@@ -18,7 +18,6 @@ const Project = () => {
           language: project.Language,
           desc: project.desc,
           image: project.image,
-          link: project.link,
         }));
         setProjects(mappedProjects);
       })
@@ -66,11 +65,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                See more
-              </a>
-            </button>
+            <button>See more</button>
           </motion.div>
         </div>
       </div>

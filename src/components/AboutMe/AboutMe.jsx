@@ -41,8 +41,8 @@ const AboutMe = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariant}>Hanze Liu</motion.h2>
+          <motion.h1 variants={textVariant}>Full-Stack </motion.h1>
           <motion.h1 variants={textVariant}>Web Developer</motion.h1>
-          <motion.button variants={textVariant}>Contact</motion.button>
         </motion.div>
       </div>
       <motion.div
@@ -53,9 +53,6 @@ const AboutMe = () => {
       >
         Problem-Solver
       </motion.div>
-      <div className="imageContaniner">
-        <img src="/me.png" alt="an image of me " />
-      </div>
     </div>
   );
 };

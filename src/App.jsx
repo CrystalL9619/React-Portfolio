@@ -5,6 +5,7 @@ import Parallax from "./components/Parallax/Parallax";
 import Gallery from "./components/Gallery/Gallery";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact/Contact";
+import Banner from "./components/Banner/Banner";
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Gallery />
       </section>
       <section id="Project">
-        <Parallax type="Project" />
+        <Banner type="Project" />
       </section>
 
       <Project id="Project" />
