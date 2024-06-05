@@ -19,6 +19,23 @@ const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(formRef.current);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
+      });
+      if (response.ok) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Failed to submit form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
   return (
     <motion.div
       ref={ref}
@@ -81,7 +98,7 @@ const Contact = () => {
           <input type="text" required placeholder="Name" />
           <input type="email" required placeholder="Email" />
           <textarea row={8} placeholder="Message" />
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </motion.form>
       </div>
     </motion.div>
