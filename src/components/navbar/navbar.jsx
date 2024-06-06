@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "../sidebar/sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import { API_BASE_URL } from "../../api/apiConfigs";
 
 const Navbar = () => {
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
     // Fetch links data
-    fetch("https://api-node-4-d27t.onrender.com/api/links")
+    fetch(`${API_BASE_URL}/api/links`) // js string interpolation
       .then((response) => response.json())
       .then((data) => {
         setLinks(data);

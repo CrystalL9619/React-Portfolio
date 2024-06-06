@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useScroll, useTransform, motion, useSpring } from "framer-motion";
 import "./Project.scss";
+import { API_BASE_URL } from "../../api/apiConfigs";
 
 const Project = () => {
   const ref = useRef();
@@ -8,7 +9,7 @@ const Project = () => {
 
   useEffect(() => {
     // Fetch projects data
-    fetch("https://api-node-4-d27t.onrender.com/api/projects")
+    fetch(`${API_BASE_URL}/api/projects`)
       .then((response) => response.json())
       .then((data) => {
         // Map fetched data to match the required structure
