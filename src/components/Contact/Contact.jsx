@@ -100,9 +100,7 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{
             delay: 4,
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "reverse",
+            duration: Infinity,
           }}
         >
           <input type="text" name="name" required placeholder="Name" />
