@@ -21,10 +21,15 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(formRef.current);
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
     try {
       const response = await fetch(`${API_BASE_URL}/api/contacts`, {
         method: "POST",
