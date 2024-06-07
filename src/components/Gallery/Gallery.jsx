@@ -44,7 +44,11 @@ const Gallery = () => {
             <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
             Business.
           </h2>
-          <button>Why Me</button>
+          <button>
+            <a href="https://docs.google.com/document/d/1ZBwtwkjLzzf6vA3yUBNPL6vHpHOcMXkEs1H0MB9mKCs/edit">
+              Why Me
+            </a>
+          </button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
