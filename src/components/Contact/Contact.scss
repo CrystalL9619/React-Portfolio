@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+
   .textContainer {
     flex: 1;
     display: flex;
@@ -14,21 +15,25 @@
     gap: 40px;
 
     h1 {
-      font: size 100px;
+      font-size: 100px;
       line-height: 80px;
     }
+
     span {
       font-weight: 300;
     }
   }
+
   .formContainer {
     flex: 1;
     position: relative;
+
     .phoneSvg {
       stroke: orange;
       position: absolute;
       margin: auto;
     }
+
     form {
       display: flex;
       flex-direction: column;
@@ -41,7 +46,13 @@
         border: 1px solid #000;
         color: #fff;
         border-radius: 5px;
+
+        &:focus {
+          outline: none;
+          border-color: orange;
+        }
       }
+
       button {
         padding: 20px;
         border: none;
