@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
     const formData = new FormData(formRef.current);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/contacts", {
         method: "POST",
         body: formData,
       });
@@ -47,16 +47,16 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}> Let's work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2>Email</h2>
+          <span>luoetrte@gator2122.hostgator.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>hello street New York</span>
+          <h2>Base</h2>
+          <span>Hello! Toronto!</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>416-***-***</span>
+          <span>613-484-3118</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
