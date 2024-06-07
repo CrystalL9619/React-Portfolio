@@ -91,13 +91,14 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
+          onSubmit={handleSubmit}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" />
-          <input type="email" required placeholder="Email" />
-          <textarea row={8} placeholder="Message" />
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="email" name="email" required placeholder="Email" />
+          <textarea name="message" rows={8} required placeholder="Message" />
           <button type="submit">Submit</button>
         </motion.form>
       </div>
