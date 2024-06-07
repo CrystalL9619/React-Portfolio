@@ -33,7 +33,10 @@ const Contact = () => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/contacts`, {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
       if (response.ok) {
         alert("Form submitted successfully!");
