@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./Contact.scss";
 import { motion, useInView } from "framer-motion";
+import { API_BASE_URL } from "../../api/apiConfigs";
 
 const variants = {
   initial: {
@@ -20,13 +21,12 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const isInView = useInView(ref, { threshold: 0.5 });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(formRef.current);
     try {
-      const response = await fetch("/api/contacts", {
+      const response = await fetch(`${API_BASE_URL}/api/contacts`, {
         method: "POST",
         body: formData,
       });
