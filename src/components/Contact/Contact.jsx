@@ -46,7 +46,7 @@ const Contact = () => {
       className="Contact"
       variants={variants}
       initial="initial"
-      animate={isInView ? "animate" : "initial"}
+      whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h2 variants={variants}> Let's work together</motion.h2>
@@ -64,7 +64,7 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       <div className="formContainer">
-        <motion.div
+        {/* <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
@@ -92,8 +92,13 @@ const Contact = () => {
                 C32.666,7.326,25.339,0,16.333,0z"
             />
           </svg>
-        </motion.div>
-        <motion.form ref={formRef} onSubmit={handleSubmit} transition={{}}>
+        </motion.div> */}
+        <motion.form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          initial={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
           <input type="text" name="name" required placeholder="Name" />
           <input type="email" name="email" required placeholder="Email" />
           <textarea name="message" rows={8} required placeholder="Message" />
