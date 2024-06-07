@@ -64,23 +64,11 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       <div className="formContainer">
-        <motion.form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <input type="text" name="name" required placeholder="Name" />
-          <input type="email" name="email" required placeholder="Email" />
-          <textarea name="message" rows={8} required placeholder="Message" />
-          <button type="submit">Submit</button>
-        </motion.form>
         <motion.div
           className="phoneSvg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          initial={{ opacity: 1 }}
+          whileInView={{ opacity: 0 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -105,6 +93,12 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
+        <motion.form ref={formRef} onSubmit={handleSubmit} transition={{}}>
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="email" name="email" required placeholder="Email" />
+          <textarea name="message" rows={8} required placeholder="Message" />
+          <button type="submit">Submit</button>
+        </motion.form>
       </div>
     </motion.div>
   );
