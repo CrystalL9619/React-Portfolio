@@ -98,7 +98,12 @@ const Contact = () => {
           onSubmit={handleSubmit}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 5 }}
+          transition={{
+            delay: 4,
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
         >
           <input type="text" name="name" required placeholder="Name" />
           <input type="email" name="email" required placeholder="Email" />
