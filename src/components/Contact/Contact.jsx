@@ -100,7 +100,8 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{
             delay: 4,
-            duration: Infinity,
+            duration: 5,
+            repeat: Infinity,
           }}
         >
           <input type="text" name="name" required placeholder="Name" />
