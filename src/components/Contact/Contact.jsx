@@ -21,6 +21,7 @@ const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+  const [isSvgInView, setIsSvgInView] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -64,11 +65,28 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       <div className="formContainer">
+        {isSvgInView && (
+          <motion.form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              duration: 0,
+            }}
+          >
+            <input type="text" name="name" required placeholder="Name" />
+            <input type="email" name="email" required placeholder="Email" />
+            <textarea name="message" rows={8} required placeholder="Message" />
+            <button type="submit">Submit</button>
+          </motion.form>
+        )}
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0 }}
+          animate={{ opacity: isSvgInView ? 0 : 1 }}
           transition={{ delay: 3, duration: 1 }}
+          onAnimationComplete={() => setIsSvgInView(true)}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -93,22 +111,6 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-        <motion.form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{
-            delay: 4,
-            duration: 5,
-            repeat: Infinity,
-          }}
-        >
-          <input type="text" name="name" required placeholder="Name" />
-          <input type="email" name="email" required placeholder="Email" />
-          <textarea name="message" rows={8} required placeholder="Message" />
-          <button type="submit">Submit</button>
-        </motion.form>
       </div>
     </motion.div>
   );
