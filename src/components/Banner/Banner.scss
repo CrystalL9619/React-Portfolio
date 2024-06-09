@@ -17,4 +17,15 @@
     position: absolute;
     z-index: 1;
   }
+  @media screen and (max-width: 940px) {
+    .Banner {
+      flex-direction: column !important;
+      flex-wrap: wrap !important;
+    }
+    .formular {
+      background-size: 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+    }
+  }
 }

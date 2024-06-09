@@ -22,9 +22,15 @@
       h2 {
         font-size: 30px;
         letter-spacing: 10px;
+        @media screen and (max-width: 700px) {
+          font-size: 24px;
+        }
       }
       h1 {
         font-size: 50px;
+        @media screen and (max-width: 700px) {
+          font-size: 30px;
+        }
       }
       button {
         width: 100px;
@@ -46,5 +52,10 @@
     height: 30%; /* Adjusted height */
     font-weight: bold;
     font-size: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .AboutMe .Wrapper .textContainer {
+    gap: 20px;
   }
 }

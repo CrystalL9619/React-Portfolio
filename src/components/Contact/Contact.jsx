@@ -66,10 +66,6 @@ const Contact = () => {
           <h2>Base</h2>
           <span>Hello! Toronto!</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>613-484-3118</span>
-        </motion.div>
       </motion.div>
       <div className="formContainer">
         {/* <motion.div
@@ -104,8 +100,8 @@ const Contact = () => {
         <motion.form
           ref={formRef}
           onSubmit={handleSubmit}
-          initial={{ opacity: 1 }}
-          transition={{ delay: 1 }}
+          //initial={{ opacity: 1 }}
+          //transition={{ delay: 1 }}
         >
           <input type="text" name="name" required placeholder="Name" />
           <input type="email" name="email" required placeholder="Email" />

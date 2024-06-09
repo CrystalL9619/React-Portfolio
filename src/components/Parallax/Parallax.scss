@@ -8,9 +8,6 @@
   justify-content: center;
   overflow: hidden;
 
-  h1 {
-    font-size: 100px;
-  }
   .bookshelf {
     background-image: url("/portfolio_6_3_-removebg.png");
     background-size: cover;
@@ -28,5 +25,21 @@
     height: 100%;
     position: absolute;
     z-index: 1;
+  }
+  @media screen and (max-width: 1200px) {
+    .Parallax {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .bookshelf {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .dialog {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }

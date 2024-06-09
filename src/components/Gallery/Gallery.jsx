@@ -22,26 +22,32 @@ const variants = {
 const Gallery = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+
   return (
     <motion.div
       className="Gallery"
       variants={variants}
       initial="initial"
-      //animate="animate"
+      animate="animate"
       //whileInView={animate}
+
       ref={ref}
-      animate={"animate"}
     >
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/I Have An Idea!.gif" alt="An icon of Idea" />
           <h2>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
+              Unique
+            </motion.b>{" "}
+            Ideas
           </h2>
         </div>
         <div className="title">
           <h2>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
+            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
+              For Your
+            </motion.b>{" "}
             Business.
           </h2>
           <button>
@@ -54,7 +60,11 @@ const Gallery = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgrey", color: "black" }}
+          whileHover={{
+            background: "rgba(211, 211, 211, 1)",
+            color: "rgba(0, 0, 0, 1)",
+          }}
+          variants={variants}
         >
           <h2>Immersive Design</h2>
           <p>
@@ -64,7 +74,11 @@ const Gallery = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgrey", color: "black" }}
+          whileHover={{
+            background: "rgba(211, 211, 211, 1)",
+            color: "rgba(0, 0, 0, 1)",
+          }}
+          variants={variants}
         >
           <h2>Engaging Interaction</h2>
           <p>
@@ -74,7 +88,11 @@ const Gallery = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgrey", color: "black" }}
+          whileHover={{
+            background: "rgba(211, 211, 211, 1)",
+            color: "rgba(0, 0, 0, 1)",
+          }}
+          variants={variants}
         >
           <h2>Solid Function</h2>
           <p>

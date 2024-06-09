@@ -40,9 +40,9 @@ const AboutMe = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariant}>Hanze Liu</motion.h2>
-          <motion.h1 variants={textVariant}>Full-Stack </motion.h1>
-          <motion.h1 variants={textVariant}>Web Developer</motion.h1>
+          <motion.h1 variants={textVariant}>Crystal Liu</motion.h1>
+          <motion.h2 variants={textVariant}>Full-Stack </motion.h2>
+          <motion.h2 variants={textVariant}>Web Developer</motion.h2>
         </motion.div>
       </div>
       <motion.div

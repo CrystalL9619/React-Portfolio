@@ -47,6 +47,7 @@
     margin: 0 100px;
     gap: 20px;
     .box {
+      flex: 1;
       max-width: 300px;
       padding: 60px;
       border-radius: 10px;
@@ -58,11 +59,35 @@
       color: aliceblue;
       height: 80%;
     }
-    p,
     h2 {
       margin: 0;
-      padding: 0;
-      gap: 0;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0;
+      height: 150px; /* Set a fixed height */
+      overflow-y: scroll; /* Enable vertical scroll */
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .Gallery {
+      height: auto;
+    }
+
+    .listContainer {
+      flex-wrap: wrap;
+      overflow-y: scroll;
+    }
+
+    .Gallery .listContainer .box {
+      display: block;
+      flex-direction: initial;
+      justify-content: initial;
+    }
+
+    .p {
+      overflow-y: scroll;
     }
   }
 }

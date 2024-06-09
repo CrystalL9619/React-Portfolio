@@ -1,74 +1,162 @@
 @import "../../app.scss";
-.Project{
-    position: relative;
+.Project {
+  position: relative;
+  left: 20%;
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
 
-    .progress {
-      position: sticky;
-      top: 0;
-      left: 0;
-      padding-top: 50px;
-      text-align: center;
-      color: orange;
-      font-size: 36px;
-
-      .progressBar {
-        height: 10px;
-        background-color: #ccc; // Initial color
-        transition: background-color 0.3s ease;
-      }
+    @media screen and (max-width: 1100px) {
+      font-size: 24px;
     }
-  
-    .container {
+
+    @media screen and (max-width: 940px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 814px) {
+      font-size: 14px;
+    }
+
+    .progressBar {
+      height: 10px;
+      background-color: #ccc; // Initial color
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-  
-      .wrapper {
-        max-width: 1366px;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
- 
-        .imageContainer {
-          flex: 1;
-          height: 50%;
+      gap: 50px;
+      .imageContainer {
+        flex: 1 1 300px;
+        height: auto;
 
-          img {
-             width: 100%;
-            height: 100%;
-            object-fit: cover;
-     
-          }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
-  
+      }
+
+      .textContainer {
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        h2 {
+          font-size: 72px;
+        }
+        p {
+          color: #888; // Initial color
+          transition: color 0.3s ease;
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .container {
+      width: 80%;
+      .wrapper {
+        .imageContainer,
         .textContainer {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap:30px;
+          flex: 1 1 300px !important;
+        }
+        .progress {
+          font-size: auto;
+        }
+
+        .textContainer {
+          margin-top: 1px;
           h2 {
-            font-size: 72px;
+            font-size: 48px !important; // Adjust font size as needed
           }
-          p {
-            color: #888; // Initial color
-            transition: color 0.3s ease;
-          }
-  
           button {
-            background-color: orange;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            width: 200px;
-            cursor: pointer;
+            width: 150px !important; // Adjust button width as needed
           }
         }
       }
     }
+  }
+  @media screen and (max-width: 940px) {
+    .container {
+      width: 80%;
+      flex-direction: column !important;
+      .wrapper {
+        .imageContainer,
+        .textContainer {
+          flex: 1 1 300px !important;
+        }
+        .progress {
+          font-size: auto;
+        }
+
+        .textContainer {
+          h2 {
+            font-size: 48px !important; // Adjust font size as needed
+          }
+          button {
+            width: 100px !important; // Adjust button width as needed
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 814px) {
+    .container {
+      width: 80%;
+      flex-direction: column !important;
+      .wrapper {
+        .imageContainer {
+          position: relative;
+          top: 20%;
+          flex: 1 1 300px !important;
+        }
+        .imageContainer img {
+          width: 80%;
+          height: 80%;
+        }
+        .textContainer {
+          position: relative;
+          top: 20%;
+          flex: 1 1 300px !important;
+          h2 {
+            font-size: 38px !important; // Adjust font size as needed
+          }
+          button {
+            width: 100px !important; // Adjust button width as needed
+          }
+        }
+      }
+    }
+  }
 }
