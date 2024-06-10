@@ -61,14 +61,21 @@
 @media screen and (max-width: 1050px) {
   .Contact {
     flex-wrap: wrap !important;
+    height: auto;
     flex-direction: column;
     align-items: center;
-    margin: 15% auto;
+    margin-top: 20%;
   }
   .textContainer,
   .formContainer {
     flex-wrap: wrap;
-
-    width: 80%; /* Take full width */
+    gap: 20px !important;
+    width: 80%;
+  }
+  .Contact .formContainer form input {
+    padding: 10px;
+  }
+  .Contact .formContainer form textarea {
+    padding: 0px;
   }
 }
