@@ -24,3 +24,13 @@
     }
   }
 }
+@media screen and (max-width: 570px) {
+  .wrapper {
+    flex-wrap: wrap;
+    .social {
+      position: absolute;
+      top: 3%;
+      left: 10%;
+    }
+  }
+}

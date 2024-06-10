@@ -8,8 +8,11 @@
 
   .Wrapper {
     max-width: 1366px;
-    height: 60%;
+    //height: 60%;
     margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
 
     .textContainer {
       width: 50%;
@@ -55,7 +58,14 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .AboutMe .Wrapper {
+    margin: 20px;
+    padding: 0;
+  }
   .AboutMe .Wrapper .textContainer {
-    gap: 20px;
+    gap: 0px;
+  }
+  .AboutMe .slidingTextContainer {
+    font-size: 30px !important;
   }
 }

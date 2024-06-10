@@ -1,7 +1,7 @@
 @import "../../app.scss";
 .Project {
   position: relative;
-  left: 20%;
+  left: 10%;
   .progress {
     position: sticky;
     top: 0;
@@ -83,80 +83,109 @@
       }
     }
   }
-  @media screen and (max-width: 1100px) {
-    .container {
-      width: 80%;
-      .wrapper {
-        .imageContainer,
-        .textContainer {
-          flex: 1 1 300px !important;
-        }
-        .progress {
-          font-size: auto;
-        }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 80%;
+    .wrapper {
+      .imageContainer,
+      .textContainer {
+        flex: 1 1 300px !important;
+      }
 
-        .textContainer {
-          margin-top: 1px;
-          h2 {
-            font-size: 48px !important;
-          }
-          button {
-            width: 150px !important;
-          }
+      .textContainer {
+        h2 {
+          font-size: 48px !important;
+        }
+        button {
+          width: 150px !important;
         }
       }
     }
   }
-  @media screen and (max-width: 940px) {
-    .container {
-      width: 80%;
-      flex-direction: column !important;
-      .wrapper {
-        .imageContainer,
-        .textContainer {
-          flex: 1 1 300px !important;
-        }
-        .progress {
-          font-size: auto;
-        }
+}
+@media screen and (max-width: 940px) {
+  .container {
+    width: 80%;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    .wrapper {
+      .imageContainer,
+      .textContainer {
+        flex: 1 1 300px !important;
+      }
 
-        .textContainer {
-          h2 {
-            font-size: 42px !important;
-          }
-          button {
-            width: 100px !important;
-          }
+      .textContainer {
+        h2 {
+          font-size: 42px !important;
+        }
+        button {
+          width: 100px !important;
         }
       }
     }
   }
-  @media screen and (max-width: 814px) {
-    .container {
-      width: 80%;
-      flex-direction: column !important;
-      .wrapper {
-        .imageContainer {
-          position: relative;
-          top: 20%;
-          flex: 1 1 300px !important;
+}
+@media screen and (max-width: 814px) {
+  .container {
+    width: 80%;
+    flex-direction: column !important;
+    .wrapper {
+      .imageContainer {
+        flex: 1 1 200px !important;
+      }
+      .Project .container .wrapper .imageContainer img {
+        width: 80% !important;
+        height: 80% !important;
+      }
+      .textContainer {
+        flex: 1 1 300px !important;
+        h2 {
+          font-size: 38px !important;
         }
-        .imageContainer img {
-          width: 80%;
-          height: 80%;
-        }
-        .textContainer {
-          position: relative;
-          top: 20%;
-          flex: 1 1 300px !important;
-          h2 {
-            font-size: 38px !important;
-          }
-          button {
-            width: 100px !important;
-          }
+        button {
+          width: 100px !important;
         }
       }
     }
+  }
+}
+@media screen and (max-width: 687px) {
+  .container {
+    width: 80%;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    .wrapper {
+      .imageContainer,
+      .textContainer {
+        flex: 1 1 200px !important;
+      }
+      .Project .container .wrapper .imageContainer img {
+        margin: 20% !important;
+        width: 80% !important;
+      }
+      .Project .container .wrapper .textContainer {
+        margin: 20% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .wrapper {
+    flex-wrap: wrap !important;
+    margin-top: 20% !important;
+  }
+  .Project .container .wrapper .imageContainer img {
+    margin: 20% !important;
+    width: 80% !important;
+  }
+  .Project .container .wrapper .textContainer {
+    margin: 40% 20% !important;
+  }
+  .container .wrapper .textContainer h2 {
+    font-size: 20px !important;
+  }
+  .container .wrapper .textContainer p {
+    font-size: 10px !important;
   }
 }
