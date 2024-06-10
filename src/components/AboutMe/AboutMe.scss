@@ -58,6 +58,11 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .AboutMe {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .AboutMe .Wrapper {
     margin: 20px;
     padding: 0;
