@@ -3,17 +3,17 @@ import Sidebar from "../sidebar/sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import { API_BASE_URL } from "../../api/apiConfigs";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebook,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-const iconMap = {
-  instagram: faInstagram,
-  facebook: faFacebook,
-  github: faGithub,
-};
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faInstagram,
+//   faFacebook,
+//   faGithub,
+// } from "@fortawesome/free-brands-svg-icons";
+// const iconMap = {
+//   instagram: faInstagram,
+//   facebook: faFacebook,
+//   github: faGithub,
+// };
 
 const Navbar = () => {
   const [links, setLinks] = useState([]);
@@ -46,15 +46,15 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <img
+              <img
                 src={`/${link.linkName.toLowerCase()}.png`}
                 alt={`${link.linkName} icon`}
-              /> */}
-              <FontAwesomeIcon
+              />
+              {/* <FontAwesomeIcon
                 icon={iconMap[link.linkName.toLowerCase()]}
                 alt={`${link.linkName} icon`}
                 size="3x"
-              />
+              /> */}
             </a>
           ))}
         </div>
