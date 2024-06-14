@@ -3,7 +3,7 @@ import Sidebar from "../sidebar/sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import { API_BASE_URL } from "../../api/apiConfigs";
-import { FontAwesomeIcon } from "fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagramSquare,
   faFacebookSquare,
