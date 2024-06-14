@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/navbar";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Parallax from "./components/Parallax/Parallax";
 import Gallery from "./components/Gallery/Gallery";
-import Project from "./components/Project/Project";
+import Projects from "./components/Project/Project";
 import Contact from "./components/Contact/Contact";
 import Banner from "./components/Banner/Banner";
 

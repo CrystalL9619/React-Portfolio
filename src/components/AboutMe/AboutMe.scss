@@ -5,6 +5,9 @@
   background-image: url("/portfolio_5.png");
   //background: linear-gradient(180 deg, #0c0c1d, #111132);
   position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .Wrapper {
     max-width: 1366px;
