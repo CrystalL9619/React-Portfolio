@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import { API_BASE_URL } from "../../api/apiConfigs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagramSquare,
-  faFacebookSquare,
-  faGithubSquare,
+  faInstagram,
+  faFacebook,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 const iconMap = {
-  instagram: faInstagramSquare,
-  facebook: faFacebookSquare,
-  github: faGithubSquare,
+  instagram: faInstagram,
+  facebook: faFacebook,
+  github: faGithub,
 };
 
 const Navbar = () => {
