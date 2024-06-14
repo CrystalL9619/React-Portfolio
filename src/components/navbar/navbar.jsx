@@ -53,6 +53,7 @@ const Navbar = () => {
               <FontAwesomeIcon
                 icon={iconMap[link.linkName.toLowerCase()]}
                 alt={`${link.linkName} icon`}
+                size="3x"
               />
             </a>
           ))}
