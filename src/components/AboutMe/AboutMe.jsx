@@ -21,7 +21,7 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: -200,
+    x: 200,
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -51,7 +51,7 @@ const AboutMe = () => {
         initial="initial"
         animate="animate"
       >
-        Problem-Solver
+        Problem-solver
       </motion.div>
     </div>
   );
