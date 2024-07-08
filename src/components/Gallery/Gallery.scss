@@ -155,76 +155,41 @@
 }
 
 @media screen and (max-width: 380px) {
-  .Gallery {
-    display: flex;
+  .titleContainer {
+    flex-wrap: wrap;
+  }
+  .titleContainer .title {
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    align-items: flex-start;
+    gap: 0px;
+    img {
+      width: 30%;
+      height: 30%;
+    }
+    button {
+      width: 30%;
+      height: 30%;
+    }
+  }
+  .listContainer {
+    overflow-x: scroll;
+    margin: 10px;
+  }
 
-    .titleContainer {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 80px;
-      padding: 0;
-
-      .title {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-
-        img {
-          width: 30%;
-          height: 30%;
-          border-radius: 50px;
-          object-fit: cover;
-        }
-
-        h1 {
-          font-size: 48px; /* Adjusted font size for smaller screens */
-          font-weight: 100;
-        }
-
-        button {
-          width: 30%;
-          height: 30%;
-          border-radius: 50px;
-          background-color: orange;
-          border: none;
-          font-size: 14px; /* Adjusted font size for smaller screens */
-          cursor: pointer;
-        }
-      }
+  .box {
+    height: 50vw;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    h2 {
+      margin: 5px;
     }
 
-    .listContainer {
-      width: 50%; /* Occupies half of the section */
-      overflow-x: scroll; /* Enable horizontal scrolling */
-      display: flex;
-      flex-wrap: nowrap; /* Prevent wrapping of .box items */
-      gap: 20px; /* Adjust as needed for spacing between .box items */
-      margin: 0; /* No margin */
-      padding: 0; /* No padding */
-
-      .box {
-        flex: 1 1 100%; /* Each .box takes full width */
-        padding: 20px; /* Add padding inside .box */
-        border-radius: 10px;
-        border: 0.5px solid grey;
-        background-color: #111132;
-        color: aliceblue;
-        margin-bottom: 20px; /* Space between .box items */
-
-        h2 {
-          margin: 5px; /* Adjust heading margin */
-        }
-
-        p {
-          margin: 0; /* Remove margin for paragraphs */
-          height: 80%; /* Adjust height of paragraphs */
-        }
-      }
+    p {
+      margin: 0;
     }
+  }
+
+  .Gallery .listContainer {
+    margin: 0 !important;
   }
 }
