@@ -10,6 +10,8 @@
     justify-content: space-between;
     background-color: transparent;
     height: 100px;
+    position: relative;
+    z-index: 1;
     span {
       font-weight: bold;
     }
