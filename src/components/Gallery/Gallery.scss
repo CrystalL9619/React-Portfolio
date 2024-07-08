@@ -172,24 +172,29 @@
     }
   }
   .listContainer {
-    overflow-x: scroll;
-    margin: 10px;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of .box items */
+    gap: 20px; /* Adjust as needed for spacing between .box items */
+    margin: 10px; /* Add margin for spacing around .listContainer */
   }
 
   .box {
-    height: 50vw;
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-    h2 {
-      margin: 5px;
-    }
-
-    p {
-      margin: 0;
-    }
+    flex: 1 1 100%; /* Each .box takes full width */
+    padding: 20px; /* Add padding inside .box */
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    background-color: #111132;
+    color: aliceblue;
+    margin-bottom: 20px; /* Space between .box items */
   }
 
-  .Gallery .listContainer {
-    margin: 0 !important;
+  h2 {
+    margin: 5px; /* Adjust heading margin */
+  }
+
+  p {
+    margin: 0; /* Remove margin for paragraphs */
+    height: 80%; /* Adjust height of paragraphs */
   }
 }

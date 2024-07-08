@@ -32,8 +32,9 @@
 
   @media screen and (max-width: 570px) {
     .wrapper {
+      margin-top: 0 !important;
       .social {
-        margin: 0 20px;
+        margin: 0 20px i;
 
         img {
           width: 30px;
@@ -45,6 +46,8 @@
 
   @media screen and (max-width: 380px) {
     .wrapper {
+      display: flex;
+      flex-direction: column;
       .social {
         margin: 100px 0 0 20px;
 
