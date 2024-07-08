@@ -64,7 +64,7 @@
     }
 
     p {
-      margin: 0;
+      margin-top: 20px;
       height: 150px;
       //overflow-y: scroll;
     }
@@ -79,18 +79,18 @@
     flex-wrap: wrap;
     margin: 10px, 20px;
     //overflow-y: scroll;
-  }
 
-  .box {
-    height: 50vw;
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-    h2 {
-      margin: 10px;
-    }
+    .box {
+      height: 50vw;
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+      h2 {
+        margin: 10px;
+      }
 
-    p {
-      margin: 0, 10px;
+      p {
+        margin: 0, 10px;
+      }
     }
   }
 }
@@ -110,6 +110,33 @@
     button {
       width: 50%;
       height: 50%;
+    }
+  }
+  .box {
+    p {
+      margin: 0, 10px;
+      height: 80%;
+    }
+  }
+  .Gallery .listContainer .box {
+    padding: 20px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titleContainer {
+    flex-wrap: wrap;
+  }
+  .titleContainer .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    img {
+      width: 30%;
+      height: 30%;
+    }
+    button {
+      width: 30%;
+      height: 30%;
     }
   }
   .box {
