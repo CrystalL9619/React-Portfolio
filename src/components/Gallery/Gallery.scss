@@ -46,7 +46,7 @@
     max-width: 1200px;
     margin: 0 100px;
     gap: 20px;
-    overflow-y: scroll;
+    //overflow-y: scroll;
     .box {
       flex: 1;
       max-width: 300px;
@@ -89,7 +89,7 @@
   }
 
   .p {
-    overflow-y: scroll;
+    //overflow-y: scroll;
   }
 }
 @media screen and (max-width: 380px) {
