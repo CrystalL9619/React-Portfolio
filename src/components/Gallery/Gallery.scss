@@ -141,14 +141,14 @@
   }
   .listContainer {
     overflow-y: scroll;
-
-    .box {
-      p {
-        margin: 0, 10px;
-        height: 80%;
-      }
+  }
+  .box {
+    p {
+      margin: 0, 10px;
+      height: 80%;
     }
   }
+
   .Gallery .listContainer .box {
     padding: 20px !important;
   }
@@ -174,21 +174,22 @@
   .listContainer {
     overflow-y: scroll;
     margin: 10px;
+  }
 
-    .box {
-      height: 50vw;
-      flex: 1 1 100%;
-      margin-bottom: 20px;
-      h2 {
-        margin: 5px;
-      }
+  .box {
+    height: 50vw;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    h2 {
+      margin: 5px;
+    }
 
-      p {
-        margin: 0;
-      }
+    p {
+      margin: 0;
     }
   }
-  .Gallery .listContainer .box {
-    padding: 20px !important;
+
+  .Gallery .listContainer {
+    margin: 0 !important;
   }
 }
