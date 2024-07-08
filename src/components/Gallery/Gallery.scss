@@ -46,7 +46,7 @@
     max-width: 1200px;
     margin: 0 100px;
     gap: 20px;
-    //overflow-y: scroll;
+
     .box {
       flex: 1 1 30%;
       padding: 60px;
@@ -67,7 +67,7 @@
     p {
       margin: 0;
       height: 150px;
-      overflow-y: scroll; // Enable vertical scroll
+      overflow-y: scroll;
     }
   }
 }
@@ -79,11 +79,11 @@
   .listContainer {
     flex-wrap: wrap;
     margin: 0, 20px;
+    overflow-y: scroll;
   }
 
-  //
   .box {
-    flex: 1 1 100%; // Make each box take the full width when wrapping
+    flex: 1 1 100%;
     margin-bottom: 20px;
   }
 }
