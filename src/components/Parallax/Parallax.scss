@@ -10,14 +10,13 @@
   flex-wrap: wrap;
 
   .bookshelf {
-    margin: 20px;
     background-image: url("/portfolio_6_3_-removebg.png");
     background-size: cover;
-    background-position: bottom;
     width: 90%;
-    height: 90%;
+    height: 100%;
     position: absolute;
     z-index: 2;
+    background-repeat: no-repeat;
   }
   .dialog {
     margin: 20px;
