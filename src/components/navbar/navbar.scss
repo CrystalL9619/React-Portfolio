@@ -27,12 +27,32 @@
     }
   }
 }
+@media screen and (max-width: 570px) {
+  .wrapper {
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    .social {
+      position: relative;
+      margin: 0 20px;
+
+      img {
+        width: 30px;
+        height: 40px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 380px) {
   .wrapper {
+    flex: 1 1 100%;
     flex-wrap: wrap;
     background-color: transparent;
     position: relative;
+    left: 150px;
     z-index: 1;
     .social {
       position: relative;
