@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  flex-wrap: wrap;
 
   .bookshelf {
     background-image: url("/portfolio_6_3_-removebg.png");

@@ -28,40 +28,14 @@ const Gallery = () => {
       className="Gallery"
       variants={variants}
       initial="initial"
-      animate="animate"
-      //whileInView={animate}
-
+      animate={isInView ? "animate" : "initial"}
       ref={ref}
     >
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <img src="/I Have An Idea!.gif" alt="An icon of Idea" />
-          <h2>
-            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
-              Unique
-            </motion.b>{" "}
-            Ideas
-          </h2>
-        </div>
-        <div className="title">
-          <h2>
-            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
-              For Your
-            </motion.b>{" "}
-            Business.
-          </h2>
-          <button>
-            <a href="https://docs.google.com/document/d/1ZBwtwkjLzzf6vA3yUBNPL6vHpHOcMXkEs1H0MB9mKCs/edit">
-              Why Me
-            </a>
-          </button>
-        </div>
-      </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{
-            background: "rgba(211, 211, 211, 1)",
+            backgroundColor: "rgba(211, 211, 211, 1)",
             color: "rgba(0, 0, 0, 1)",
           }}
           variants={variants}
@@ -75,7 +49,7 @@ const Gallery = () => {
         <motion.div
           className="box"
           whileHover={{
-            background: "rgba(211, 211, 211, 1)",
+            backgroundColor: "rgba(211, 211, 211, 1)",
             color: "rgba(0, 0, 0, 1)",
           }}
           variants={variants}
@@ -89,7 +63,7 @@ const Gallery = () => {
         <motion.div
           className="box"
           whileHover={{
-            background: "rgba(211, 211, 211, 1)",
+            backgroundColor: "rgba(211, 211, 211, 1)",
             color: "rgba(0, 0, 0, 1)",
           }}
           variants={variants}
@@ -105,4 +79,5 @@ const Gallery = () => {
     </motion.div>
   );
 };
+
 export default Gallery;
