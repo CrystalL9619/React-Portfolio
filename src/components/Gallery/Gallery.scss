@@ -159,12 +159,28 @@
     align-items: flex-start;
     gap: 0px;
     img {
-      width: 50%;
-      height: 50%;
+      width: 30%;
+      height: 30%;
     }
     button {
-      width: 50%;
-      height: 50%;
+      width: 30%;
+      height: 30%;
+    }
+  }
+  .listContainer {
+    overflow-y: scroll;
+
+    .box {
+      height: 50vw;
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+      h2 {
+        margin: 5px;
+      }
+
+      p {
+        margin: 0, 10px;
+      }
     }
   }
   .Gallery .listContainer .box {
