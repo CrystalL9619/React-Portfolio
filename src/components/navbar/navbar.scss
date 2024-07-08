@@ -31,6 +31,8 @@
   .wrapper {
     flex-wrap: wrap;
     background-color: transparent;
+    position: relative;
+    z-index: 1;
     .social {
       position: absolute;
       top: 3%;
