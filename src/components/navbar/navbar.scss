@@ -32,7 +32,9 @@
 
   @media screen and (max-width: 570px) {
     .wrapper {
-      margin-top: 0 !important;
+      display: flex;
+      flex-direction: column;
+      //margin-top: 0 !important;
       .social {
         margin: 0 20px i;
 
