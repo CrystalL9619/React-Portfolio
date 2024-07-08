@@ -1,4 +1,5 @@
 @import "../../app.scss";
+
 .navbar {
   height: 100px;
 
@@ -12,9 +13,11 @@
     height: 100px;
     position: relative;
     z-index: 1;
+
     span {
       font-weight: bold;
     }
+
     .social {
       display: flex;
       gap: 20px;
@@ -26,41 +29,23 @@
       }
     }
   }
-}
-@media screen and (max-width: 570px) {
-  .wrapper {
-    flex-wrap: wrap;
-    margin: 0;
-    background-color: transparent;
-    position: relative;
-    z-index: 1;
-    .social {
-      position: relative;
-      margin: 0 20px;
 
-      img {
-        width: 30px;
-        height: 40px;
-      }
+  @media screen and (max-width: 570px) {
+    .wrapper {
+      flex-wrap: wrap;
+      margin: 0; /* Remove !important and rely on specificity */
     }
   }
-}
 
-@media screen and (max-width: 380px) {
-  .wrapper {
-    flex: 1 1 100%;
-    flex-wrap: wrap;
-    background-color: transparent;
-    position: relative;
-    left: 150px;
-    z-index: 1;
-    .social {
-      position: relative;
-      margin: 0 20px;
+  @media screen and (max-width: 380px) {
+    .wrapper {
+      .social {
+        margin: 0 20px;
 
-      img {
-        width: 30px;
-        height: 40px;
+        img {
+          width: 30px;
+          height: 40px;
+        }
       }
     }
   }

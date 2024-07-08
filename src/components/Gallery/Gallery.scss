@@ -139,10 +139,14 @@
       height: 30%;
     }
   }
-  .box {
-    p {
-      margin: 0, 10px;
-      height: 80%;
+  .listContainer {
+    overflow-y: scroll;
+
+    .box {
+      p {
+        margin: 0, 10px;
+        height: 80%;
+      }
     }
   }
   .Gallery .listContainer .box {
