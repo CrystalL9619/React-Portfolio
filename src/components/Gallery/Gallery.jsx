@@ -31,6 +31,30 @@ const Gallery = () => {
       animate={isInView ? "animate" : "initial"}
       ref={ref}
     >
+      <motion.div className="titleContainer" variants={variants}>
+        <div className="title">
+          <img src="/I Have An Idea!.gif" alt="An icon of Idea" />
+          <h2>
+            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
+              Unique
+            </motion.b>{" "}
+            Ideas
+          </h2>
+        </div>
+        <div className="title">
+          <h2>
+            <motion.b whileHover={{ color: "rgba(255, 165, 0, 1)" }}>
+              For Your
+            </motion.b>{" "}
+            Business.
+          </h2>
+          <button>
+            <a href="https://docs.google.com/document/d/1ZBwtwkjLzzf6vA3yUBNPL6vHpHOcMXkEs1H0MB9mKCs/edit">
+              Why Me
+            </a>
+          </button>
+        </div>
+      </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
