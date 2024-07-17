@@ -39,12 +39,12 @@
     }
   }
   .listContainer {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: stretch;
     max-width: 1200px;
-    margin: 0 100px;
+    margin: 0 100px 20px 100px;
     gap: 20px;
     flex-wrap: wrap;
 
@@ -73,18 +73,13 @@
 }
 @media screen and (max-width: 1330px) {
   .Gallery {
-    height: auto;
+    height: auto !important;
   }
 
   .titleContainer,
   .listContainer {
-    flex: 1;
-    margin: 20px;
-  }
-
-  .box {
-    flex: 1 0 calc(50% - 20px);
-    height: auto;
+    flex: 1 !important;
+    margin-top: 10px !important;
   }
 }
 
