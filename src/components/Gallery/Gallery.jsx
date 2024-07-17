@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
-    x: -500,
+    x: -200,
     y: 100,
     opacity: 0,
   },
@@ -50,7 +50,7 @@ const Gallery = () => {
           </h2>
           <button>
             <a href="https://docs.google.com/document/d/1ZBwtwkjLzzf6vA3yUBNPL6vHpHOcMXkEs1H0MB9mKCs/edit">
-              Why Me
+              Resume
             </a>
           </button>
         </div>

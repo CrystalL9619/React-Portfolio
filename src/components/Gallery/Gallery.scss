@@ -23,8 +23,8 @@
         border-radius: 50px;
         object-fit: cover;
       }
-      h1 {
-        font-size: 96px;
+      h2 {
+        font-size: 40px;
         font-weight: 100;
       }
       button {
@@ -39,26 +39,26 @@
     }
   }
   .listContainer {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     max-width: 1200px;
     margin: 0 100px;
     gap: 20px;
+    flex-wrap: wrap;
 
     .box {
-      flex: 1 1 30%;
-      padding: 60px;
+      flex: 1 0 calc(33.33% - 20px);
+      padding: 20px;
       border-radius: 10px;
       border: 0.5px solid grey;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
       background-color: #111132;
       color: aliceblue;
-      height: 80%;
+      margin-bottom: 20px;
       transition: background-color 0.3s, color 0.3s;
+      display: flex;
+      flex-direction: column;
     }
     h2 {
       margin: 0px;
@@ -66,131 +66,46 @@
 
     p {
       margin-top: 20px;
-      height: 150px;
+      //height: 150px;
       //overflow-y: scroll;
     }
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1330px) {
   .Gallery {
     height: auto;
   }
 
+  .titleContainer,
   .listContainer {
-    flex-wrap: wrap;
-    margin: 10px, 20px;
-    //overflow-y: scroll;
-
-    .box {
-      height: 50vw;
-      flex: 1 1 100%;
-      margin-bottom: 20px;
-      h2 {
-        margin: 10px;
-      }
-
-      p {
-        margin: 0, 10px;
-      }
-    }
+    flex: 1;
+    margin: 20px;
   }
-}
 
-@media screen and (max-width: 700px) {
-  .titleContainer {
-    flex-wrap: wrap;
-  }
-  .titleContainer .title {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
-    img {
-      width: 50%;
-      height: 50%;
-    }
-    button {
-      width: 50%;
-      height: 50%;
-    }
-  }
   .box {
-    p {
-      margin: 0, 10px;
-      height: 80%;
-    }
-  }
-  .Gallery .listContainer .box {
-    padding: 20px !important;
-  }
-}
-@media screen and (max-width: 550px) {
-  .titleContainer {
-    flex-wrap: wrap;
-  }
-  .titleContainer .title {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
-    img {
-      width: 30%;
-      height: 30%;
-    }
-    button {
-      width: 30%;
-      height: 30%;
-    }
-  }
-  .listContainer {
-    overflow-y: scroll;
-  }
-  .box {
-    p {
-      margin: 0, 10px;
-      height: 80%;
-    }
-  }
-
-  .Gallery .listContainer .box {
-    padding: 20px !important;
+    flex: 1 0 calc(50% - 20px);
+    height: auto;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
   .titleContainer {
-    flex-wrap: wrap;
-  }
-  .titleContainer .title {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
-    img {
-      width: 30%;
-      height: 30%;
-    }
-    button {
-      width: 30%;
-      height: 30%;
-    }
-  }
-  .listContainer {
-    overflow-x: scroll;
     margin: 10px;
   }
+  .title {
+    img {
+      width: 80px;
+      height: 40px;
+    }
 
-  .box {
-    height: 50vw;
-    flex: 1 1 100%;
-    margin-bottom: 20px;
     h2 {
-      margin: 5px;
+      font-size: 32px;
     }
 
-    p {
-      margin: 0;
+    button {
+      width: 80px;
+      height: 40px;
+      font-size: 10px;
     }
-  }
-
-  .Gallery .listContainer {
-    margin: 0 !important;
   }
 }
