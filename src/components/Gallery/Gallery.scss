@@ -111,14 +111,28 @@
 }
 
 @media screen and (max-width: 530px) {
-  .box {
-    flex: 1 0 calc(33.33% - 5px) !important;
-    padding: 10px !important;
+  .titleContainer {
+    flex-wrap: wrap !important;
+    margin-top: 80px !important;
+  }
+  .title {
+    gap: 10px !important;
     h2 {
-      font-size: 20px !important;
+      font-size: 14px !important;
     }
-    p {
-      margin-top: 5px !important;
+  }
+  .listContainer {
+    gap: 10px !important;
+    margin: 5px !important;
+    .box {
+      flex: 1 0 calc(33.33% - 5px) !important;
+      padding: 10px !important;
+      h2 {
+        font-size: 20px !important;
+      }
+      p {
+        margin-top: 5px !important;
+      }
     }
   }
 }
