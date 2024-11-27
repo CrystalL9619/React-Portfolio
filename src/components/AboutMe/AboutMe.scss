@@ -1,12 +1,12 @@
 @import "../../app.scss";
 .AboutMe {
-  max-height: 600px;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 20px);
+
   overflow: hidden;
   background-image: url("/portfolio_5.png");
   //background: linear-gradient(180 deg, #0c0c1d, #111132);
   position: relative;
-  background-size: 80%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
