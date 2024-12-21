@@ -177,15 +177,13 @@
 @media screen and (max-width: 570px) {
   .wrapper {
     flex-wrap: wrap !important;
-    margin-top: 20% !important;
+    
   }
   .Project .container .wrapper .imageContainer img {
-    margin: 20% !important;
+   
     width: 80% !important;
   }
-  .Project .container .wrapper .textContainer {
-    margin: 40% 20% !important;
-  }
+
   .container .wrapper .textContainer h2 {
     font-size: 20px !important;
   }

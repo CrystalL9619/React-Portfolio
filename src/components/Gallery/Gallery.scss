@@ -77,15 +77,34 @@
   .Gallery {
     height: auto !important;
   }
-
+   .titleContainer{
+    .title{
+      h2{
+        font-size: 24px !important;
+      }
+      button{
+        font-size:24px !important;
+      }
+    }
+   }
   .titleContainer,
   .listContainer {
     flex: 1 !important;
     margin-top: 10px !important;
   }
+  .listContainer{
+    .box{
+        h2{
+          font-size:24px !important;
+        }
+        p{
+          font-size:18px !important;
+        }
+    }
+  }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 700px) {
   .titleContainer {
     margin: 10px !important;
   }
@@ -94,31 +113,37 @@
       width: 80px !important;
       height: 40px !important;
     }
-
+    
     h2 {
-      font-size: 32px !important;
+      font-size: 24px !important;
     }
 
     button {
-      width: 80px !important;
-      height: 40px !important;
-      font-size: 10px !important;
+      width: 160px !important;
+      height: 60px !important;
+     
     }
   }
 }
 
 @media screen and (max-width: 530px) {
   .titleContainer {
+   
     flex-wrap: wrap !important;
     margin-top: 80px !important;
   }
   .title {
+    width:80%;
     gap: 10px !important;
     h2 {
       font-size: 14px !important;
     }
+    button{
+
+    }
   }
   .listContainer {
+    width:90%;
     gap: 10px !important;
     margin: 5px !important;
     .box {
