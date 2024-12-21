@@ -1,7 +1,9 @@
 @import "../../app.scss";
 .Project {
   position: relative;
-  left: 10%;
+  max-width:3000px;
+  overflow: hidden;
+ 
   .progress {
     position: sticky;
     top: 0;
@@ -24,6 +26,7 @@
     }
 
     .progressBar {
+      width:100%;
       height: 10px;
       background-color: #ccc;
       transition: background-color 0.3s ease;
@@ -31,6 +34,7 @@
   }
 
   .container {
+    margin:0 10%;
     display: flex;
     align-items: center;
     justify-content: center;

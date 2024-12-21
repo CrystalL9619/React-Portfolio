@@ -33,7 +33,7 @@
         border-radius: 50px;
         background-color: orange;
         border: none;
-        font-size: 18px;
+        font-size: 32px;
         cursor: pointer;
       }
     }
@@ -43,8 +43,8 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    max-width: 1200px;
-    margin: 0 100px 20px 100px;
+   
+    margin: 20px 100px;
     gap: 20px;
     flex-wrap: wrap;
 
@@ -62,10 +62,12 @@
     }
     h2 {
       margin: 0px;
+      font-size:32px;
     }
 
     p {
       margin-top: 20px;
+      font-size:24px;
       //height: 150px;
       //overflow-y: scroll;
     }

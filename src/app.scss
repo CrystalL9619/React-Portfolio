@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
+  
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,12 +15,15 @@ body {
 }
 
 section {
-  height: 100vh;
-  width: 100 vw;
-  scroll-snap-align: center;
+  height:100vh;
+  width: 100vw;
+
   overflow: hidden;
+  
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+@media screen and (max-width: 570px) {
 }

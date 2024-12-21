@@ -18,7 +18,8 @@ const Banner = () => {
         background: "#fff",
       }}
     >
-      <motion.div style={{ x: yBg }} className="formular"></motion.div>
+      <div className="formular"></div>
+      {/* <motion.div style={{ x: yBg }} className="formular"></motion.div> */}
     </div>
   );
 };
