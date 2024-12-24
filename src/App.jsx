@@ -7,6 +7,8 @@ import Project from "./components/Project/Project";
 import Contact from "./components/Contact/Contact";
 import Banner from "./components/Banner/Banner";
 
+
+
 const App = () => {
   return (
     <div>
